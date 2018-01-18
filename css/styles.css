@@ -1,0 +1,156 @@
+body, html {
+    height: 100%;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+hr {
+    margin-left: inherit;
+    width: 50%;
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+@media(max-width:768px) {
+    #header {
+        text-align: center;
+    }
+    #about {
+        text-align: center;
+    }
+    #about .video {
+        margin-top: 15%;
+    }
+}
+
+/* Transparency for the navbar*/
+.navbar {
+    background-color: rgba(21,31,33,0.9);
+    border-bottom: 1px solid #dedede;   
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 20px;
+    color: #ffd415;
+}
+.navbar .navbar-nav .nav-link:hover {
+    margin-right: 20px;
+    color: #fff;
+}
+
+.navbar .navbar-brand {
+    padding-left: 60px;
+    color: #ffd415; 
+}
+.navbar .navbar-brand:hover {
+    padding-left: 60px;
+    color: #fff; 
+}
+/* Color for the navbar Toggler Icon*/
+.navbar-toggler {
+    color: #fff;
+}
+/* HEADER */
+#header {
+    background: url(../img/frontpage.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: white; 
+    display: flex;
+    align-items: top;
+}
+
+.header-content {
+    padding-top: 100px;
+}
+
+#header a .fa {
+    color: #ffd415;   
+}
+
+#header a .fa:hover {
+    color: #ffF;
+}
+
+/* ABOUT */ 
+#about {
+    padding: 4.25rem 0;
+    background: #f5f2f3;
+    overflow: hidden;
+}
+
+#about .video {
+    align-content: center;
+}
+
+#about .btn-about {
+    background-color: #2b2424;   
+    width: 30%;
+}
+
+#about .btn-about:hover {
+    background-color: #ffd415;   
+    width: 30%;
+}
+
+#about a {
+    color: #fff;
+}
+#about a:hover {
+    color: #1d1c1c;
+    
+}
+
+#about ul li {
+     list-style: square;
+}
+
+/* ALBUMS */ 
+#albums {
+    padding: 4.25rem 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+#albums .album-img {
+    position: relative;
+}
+
+#albums .album-img .img-overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+   width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-image: url(../img/eye.png);
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#albums .album-img .img-overlay:hover {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* FOOTER */ 
+#footer {
+    padding: 2rem 0;
+    background-color: #484848;
+    color: #fff;
+}
+
+#footer a {
+    color: #ffd415;
+}
+#footer a:hover {
+    color: #fff;
+}
+#footer .fa {
+    padding:0 5px; 
+}
